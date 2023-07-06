@@ -69,8 +69,45 @@ body{
             }
         }
     }
+.main{
+    padding-right: 94px;
+    padding-left: 94px;
+    .titulos{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 67px;
+        /*padding-right: 94px;
+        padding-left: 94px;*/
+        .primertitulo{
+            width: 299px;
+            height: 29px;
+            .titulo1{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color:#333333;
+            }
+        }
+        .segundotitulo{
+            .titulo2{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                color:#333333;
+            }
+        }
+    }
     .posts-general{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content:stretch;
+        
+        /*padding: 0 94px;*/
+        gap: 0px;
         .post{
+            width:395px;
+            /*padding:12px;*/
+            place-content: center;
             .marco-de-fotos{
                 display: flex;
                 width: 395px;
@@ -84,6 +121,10 @@ body{
             }
             .pie-de-foto{
                 display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                padding-top: 10px;
+                align-items: center;
                 .super-host{
                     width: 100px;
                     height: 28px;
@@ -99,13 +140,49 @@ body{
                 .letters{
                     width: 181px;
                     height: 17px;
+                    margin-right: 15px;
                     .interior{
                         font-family:'Montserrat', sans-serif;
                         font-weight: 500;
                         font-size: 14px;
+                        color: #828282;
                     }
+                }
+                .stars{
+                    display:flex;
+                    .star-button{
+                        width: 24px;
+                        height: 24px;
+                        background: none;
+                        border: none;
+                        .estrellita{
+                            width: 15.76px;
+                            height: 15.88px;
+                        }    
+                    }
+                    .parrafito{                        
+                        font-family: 'Montserrat', sans-serif;
+                        height: 17px; 
+                        width: 32px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color:#4F4F4F;
+                    }
+                }
+            }
+            .footer-foto{
+                width: 395px;
+                height: 20px;
+                .staylist{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color:#333333;
+                    padding-top:11px;
                 }
             }
         }
     }
 }
+}        
+    
